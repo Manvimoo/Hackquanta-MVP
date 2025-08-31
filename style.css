@@ -1,0 +1,118 @@
+:root {
+    --bg-color: #f7f7f7;
+    --text-color: #121212;
+    --card-bg: #ffffff;
+    --primary-color: #b71c1c;
+    --secondary-color: #ff5252;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --primary-color: #ff5252;
+    --secondary-color: #ff1744;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    width: 500px;
+    margin: 60px auto;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+h2, h3, h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #121212;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark input[type=text],
+body.dark input[type=password],
+body.dark input[type=email],
+body.dark input[type=number] {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+button, .option-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover, .option-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.dashboard-section {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(244, 243, 243, 0.956);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.dashboard-section:hover {
+    transform: translateY(-3px);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.theme-toggle {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    float: right;
+}
+.theme-toggle:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
